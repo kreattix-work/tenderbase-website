@@ -38,8 +38,8 @@
   margin-bottom: 42px;
 }
 
-.question__area.training_question{
-    margin-bottom: 0;
+.resource__area.training_resource{
+    margin-bottom: 100px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

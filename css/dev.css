@@ -1,3 +1,100 @@
+.training__courses__card a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.training__courses__card a span {
+  color: var(--black-300, #536262);
+  font-size: 14px;
+  font-weight: 700;
+  text-underline-offset: 4px;
+  text-decoration-line: underline;
+}
+
+.training__courses__card:hover a span {
+  color: var(--primary-500, #02897a);
+}
+
+.training__courses__card:hover a img {
+  transform: rotate(180deg);
+}
+
+.training__courses__card__data p {
+  color: var(--primary-500, #02897a);
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.training__courses__card__data.secondary p {
+  color: var(--secondary-500, #fb8f30);
+}
+
+.training__courses__card__data {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.training__courses__card__body h1 {
+  color: var(--black-500, #051412);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.training__courses__card__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.training__courses__card {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: var(--white-500, #fff);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
+}
+
+.training__courses__card:hover {
+  border-radius: 4px;
+  border-color: var(--primary-200, #c1eaea);
+  background: var(--white-500, #fff);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
+}
+
+.training__courses__card > img {
+  width: 100%;
+}
+
+.training__courses__content {
+  padding: 60px 0;
+}
+
+.training__courses__header {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.training__courses__header span {
+  background-color: #eff5f5;
+  padding: 3px 8px;
+  border-radius: 8px;
+  color: #02897a;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.training__courses__header h1 {
+  color: var(--black-500, #051412);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
 .training__hero__area {
   padding-top: 80px;
   padding-bottom: 60px;
@@ -73,7 +170,7 @@
   margin-bottom: 30px;
 }
 
-.training__feature__card__title {
+.training__feature__card h1 {
   color: var(--black-500, #051412);
   text-align: center;
   font-size: 20px;
@@ -81,7 +178,7 @@
   margin-bottom: 16px;
 }
 
-.training__feature__card__desc {
+.training__feature__card p {
   color: var(--black-300, #536262);
   text-align: center;
   font-size: 14px;

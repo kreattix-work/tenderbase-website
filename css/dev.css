@@ -1,3 +1,90 @@
+.training__getstarted__area {
+  background: linear-gradient(180deg, #25824c 0%, #0a9072 100%);
+  padding: 100px 0;
+}
+.training__getstarted__content {
+  max-width: 400px;
+}
+.training__getstarted__content h1 {
+  color: var(--white-500, #fff);
+  font-size: 42px;
+  font-weight: 700;
+}
+.training__getstarted__content p {
+  color: var(--white-400, #f2f2f2);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px 0px 40px 0px;
+}
+.training__getstarted__content button {
+  display: inline-flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-500, #02897a);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+  background: var(--white-500, #fff);
+  border: 0;
+  transition: 0.3s;
+}
+.training__getstarted__content button:hover {
+  background: var(--secondary-500, #fb8f30);
+  color: var(--white-500, #fff);
+}
+.training__getstarted__images {
+  display: flex;
+  flex-direction: column;
+  max-width: 470px;
+  margin-left: auto;
+  gap: 30px;
+}
+.training__getstarted__images img {
+  max-width: 300px;
+}
+.training__getstarted__images .image-1 {
+  align-self: end;
+}
+.training__support__area {
+  padding: 100px 0;
+  display: flex;
+}
+
+.training__support__content {
+  max-width: 470px;
+  margin-left: auto;
+}
+.training__support__content h1 {
+  color: var(--black-500, #051412);
+  font-size: 42px;
+  font-weight: 700;
+}
+.training__support__content p {
+  color: var(--black-300, #536262);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px 0px 40px 0px;
+}
+.training__support__content button {
+  display: inline-flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: var(--primary-primary-500, #02897a);
+  color: var(--white-500, #fff);
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  transition: 0.3s;
+}
+.training__support__content button:hover {
+  background: var(--secondary-500, #fb8f30);
+  color: var(--white-500, #fff);
+}
 .training__courses__card a {
   display: flex;
   align-items: center;

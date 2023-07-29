@@ -1,3 +1,58 @@
+.buyer_profile__hero__area {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.buyer_profile__hero__area span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: var(--primary-500, #02897a);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+.buyer_profile__hero__area span img {
+  width: 20px;
+  margin-bottom: 0;
+}
+
+.buyer_profile__hero__area h1 {
+  color: var(--black-500, #051412);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  margin-bottom: 16px;
+}
+
+.buyer_profile__hero__area p {
+  color: #536262;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 40px;
+  max-width: 542px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buyer_profile__hero__area img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.buyer_profile__hero__area .description2 {
+  color: var(--black-500, #051412);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  max-width: 781px;
+  margin-bottom: 40px;
+}
+
 .training__course__accordion {
   height: 100%;
   display: flex;

@@ -1,6 +1,97 @@
+.buyer_profile__tender__area {
+  padding: 80px 0;
+}
+
+.buyer_profile__tender__heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buyer_profile__tender__heading h1 {
+  color: var(--black-400, #213937);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 42px;
+  max-width: 569px;
+}
+
+.buyer_profile__tender__heading h2 {
+  color: var(--black-300, #536262);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.buyer_profile__tender__content {
+  column-gap: 100px;
+  row-gap: 24px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.buyer_profile__tender__item {
+  max-width: 560px;
+}
+.buyer_profile__tender__item:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 70px;
+  background: #e4e4e4;
+  transition: 0.3s;
+  margin-top: 24px;
+}
+.buyer_profile__tender__item:hover:after {
+  width: 100%;
+  background: #02897a;
+}
+
+.buyer_profile__tender__metadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.buyer_profile__tender__metadata > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.buyer_profile__tender__metadata img {
+  width: 16px;
+}
+
+.buyer_profile__tender__content h3 {
+  color: var(--primary-500, #02897a);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+}
+.buyer_profile__tender__content h4 {
+  color: var(--black-200, #788080);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+}
+.buyer_profile__tender__content span {
+  color: var(--black-300, #536262);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
 .buyer_profile__hero__area {
   text-align: center;
   padding: 80px 0;
+  background: #fbfbff;
 }
 
 .buyer_profile__hero__area span {

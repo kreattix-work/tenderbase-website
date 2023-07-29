@@ -88,6 +88,14 @@
   line-height: 18px;
 }
 
+.training__support__images {
+  position: relative;
+}
+.support-arrow-img {
+  position: absolute;
+  right: -95px;
+  bottom: 28px;
+}
 .buyer_profile__hero__area {
   text-align: center;
   padding: 80px 0;
@@ -379,6 +387,9 @@
   font-size: 16px;
   font-weight: 700;
 }
+.training__course__description {
+  margin-bottom: 24px;
+}
 .training__course__description h1 {
   color: var(--black-500, #051412);
   font-size: 18px;
@@ -653,7 +664,11 @@
   background: #e8f5f1;
   z-index: -1;
 }
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .support-arrow-img {
+    bottom: -22px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .training__hero__content {
     max-width: 80%;
@@ -685,6 +700,30 @@
   .training__hero__area {
     padding-top: 50px;
     padding-bottom: 30px;
+  }
+  /* new */
+  .training__feature__card {
+    padding: 14px;
+  }
+  .training__feature__card img {
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+  .training__feature__card h1 {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .training__support__images {
+    text-align: center;
+  }
+  .training__support__content {
+    max-width: 100%;
+  }
+  .resource__content p {
+    font-size: 18px;
+  }
+  .support-arrow-img {
+    display: none;
   }
 }
 
@@ -720,5 +759,47 @@
     height: 42px;
     border-radius: 4px;
     font-size: 14px;
+  }
+  .training__feature__bg .row {
+    margin: 0px auto;
+    max-width: 400px;
+  }
+  /* new */
+  .training__feature__card {
+    padding: 15px;
+  }
+  .training__feature__card img {
+    margin-bottom: 15px;
+  }
+  .training__feature__card h1 {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .training__support__images {
+    text-align: center;
+  }
+  .training__support__content {
+    max-width: 100%;
+  }
+  .training__course__accordion__item {
+    align-items: flex-start;
+  }
+  .training__course__accordion__item img {
+    margin-top: 5px;
+  }
+  .training__course__profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pagination li a {
+    height: 40px;
+    width: 40px;
+  }
+  .pagination li:first-child img,
+  .pagination li:last-child img {
+    margin-top: -3px;
+  }
+  .support-arrow-img {
+    display: none;
   }
 }

@@ -1,3 +1,30 @@
+.training__courses__tabs {
+  margin-top: 24px;
+}
+
+.training__courses__tabcontent {
+  margin-top: 20px;
+  border: 1px solid #a3c3c3;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+.training__courses__tabs .nav-link {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--black-500, #051412);
+  font-size: 16px;
+  font-weight: 400;
+}
+.training__courses__tabs .nav-link {
+  border-bottom: 2px solid transparent;
+}
+.training__courses__tabs .nav-link.active {
+  border: 0;
+  border-bottom: 2px solid var(--primary-500, #02897a);
+  color: var(--primary-500, #02897a);
+  font-weight: 600;
+}
+
 .training__getstarted__area {
   background: linear-gradient(180deg, #25824c 0%, #0a9072 100%);
   padding: 100px 0;
@@ -156,7 +183,7 @@
 }
 
 .training__courses__content {
-  padding: 60px 0;
+  padding: 60px 0 30px 0;
 }
 
 .training__courses__header {
@@ -164,7 +191,7 @@
   padding-top: 60px;
 }
 
-.training__courses__header span {
+:is(.training__courses__header, .training__courses__subheader) span {
   background-color: #eff5f5;
   padding: 3px 8px;
   border-radius: 8px;
@@ -175,9 +202,11 @@
   margin-bottom: 20px;
   display: inline-block;
 }
-.training__courses__header h1 {
+.training__courses__subheader span {
+  margin-bottom: 10px;
+}
+:is(.training__courses__header, .training__courses__subheader) h1 {
   color: var(--black-500, #051412);
-  text-align: center;
   font-size: 32px;
   font-weight: 700;
 }

@@ -1,3 +1,87 @@
+.training__course__accordion {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.training__course__accordion .accordion-item {
+  background-color: #fff;
+  border: 1px solid #a7adad !important;
+  margin-bottom: 16px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.training__course__accordion .accordion-button {
+  color: var(--black-500, #051412);
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid var(--white-300, #e4e4e4);
+  background: #f7f9f8;
+  box-shadow: 0 !important;
+  outline: none !important;
+}
+.training__course__accordion .accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+.training__course__accordion p {
+  color: var(--black-400, #213937);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.training__course__accordion ul {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 824px;
+}
+.training__course__accordion__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.training__course__accordion__item + .training__course__accordion__item {
+  margin-top: 10px;
+}
+.training__course__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 723px;
+  gap: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+.training__course__contact p {
+  color: var(--black-500, #051412);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.training__course__contact button {
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: var(--black-500, #051412);
+  color: var(--white-500, #fff);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  transition: 0.3s;
+}
+.training__course__contact button:hover {
+  background: var(--secondary-500, #fb8f30);
+}
+
 .training__courses__tabs {
   margin-top: 24px;
 }

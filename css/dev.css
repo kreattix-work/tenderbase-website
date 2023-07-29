@@ -74,11 +74,123 @@
 .training__getstarted__images .image-1 {
   align-self: end;
 }
+.training__course__content h1 {
+  color: var(--black-500, #051412);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.training__course__content span {
+  color: var(--black--400, #213937);
+  font-size: 16px;
+  font-weight: 700;
+}
+.training__course__content p {
+  color: var(--black-black-400, #213937);
+  font-size: 16px;
+  font-weight: 400;
+}
+.training__course__book span {
+  color: var(--green-500, #25824c);
+  text-align: end;
+  font-size: 18px;
+  font-weight: 700;
+}
+.training__course__book p {
+  color: var(--black-500, #051412);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+.training__course__book {
+  width: 153px;
+}
+.training__course__book button {
+  display: inline-flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: var(--primary-primary-500, #02897a);
+  color: var(--white-500, #fff);
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  transition: 0.3s;
+}
+.training__course__book button:hover {
+  background: var(--secondary-500, #fb8f30);
+  color: var(--white-500, #fff);
+}
+.training__course__about hr {
+  width: 100%;
+  height: 1px;
+  background: #e4e4e4;
+}
+.training__course__details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.training__course__content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.training__course__content p {
+  color: var(--black-400, #213937);
+  font-size: 16px;
+  font-weight: 400;
+}
+.training__course__content p span {
+  color: var(--black-400, #213937);
+  font-size: 16px;
+  font-weight: 700;
+}
+.training__course__description h1 {
+  color: var(--black-500, #051412);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.training__course__profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.training__course__profile > img {
+  width: 100px;
+  border-radius: 4px;
+}
+.training__course__details p {
+  color: var(--primary-500, #02897a);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.training__course__details span {
+  color: var(--black-500, #051412);
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.training__course__details img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.training__course__profile__email {
+  display: flex;
+}
+
 .training__support__area {
   padding: 100px 0;
   display: flex;
 }
-
 .training__support__content {
   max-width: 470px;
   margin-left: auto;

@@ -1,5 +1,55 @@
+.buyer_profile__contract__area {
+  padding: 60px 0;
+}
+
+.buyer_profile__contract__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buyer_profile__contract__heading h1 {
+  color: var(--black-400, #213937);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 42px;
+  max-width: 569px;
+}
+
+.buyer_profile__contract__heading h2 {
+  color: var(--black-300, #536262);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.buyer_profile__contract__area {
+  padding: 60px 0;
+}
+
+.buyer_profile__contract__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buyer_profile__contract__heading h1 {
+  color: var(--black-400, #213937);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 42px;
+  max-width: 569px;
+}
+
+.buyer_profile__contract__heading h2 {
+  color: var(--black-300, #536262);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .buyer_profile__tender__area {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .buyer_profile__tender__heading {
@@ -29,7 +79,7 @@
 .buyer_profile__tender__content {
   column-gap: 100px;
   row-gap: 24px;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 60px;
 }
 
@@ -88,14 +138,6 @@
   line-height: 18px;
 }
 
-.training__support__images {
-  position: relative;
-}
-.support-arrow-img {
-  position: absolute;
-  right: -95px;
-  bottom: 28px;
-}
 .buyer_profile__hero__area {
   text-align: center;
   padding: 80px 0;
@@ -387,9 +429,6 @@
   font-size: 16px;
   font-weight: 700;
 }
-.training__course__description {
-  margin-bottom: 24px;
-}
 .training__course__description h1 {
   color: var(--black-500, #051412);
   font-size: 18px;
@@ -664,11 +703,7 @@
   background: #e8f5f1;
   z-index: -1;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .support-arrow-img {
-    bottom: -22px;
-  }
-}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .training__hero__content {
     max-width: 80%;
@@ -700,30 +735,6 @@
   .training__hero__area {
     padding-top: 50px;
     padding-bottom: 30px;
-  }
-  /* new */
-  .training__feature__card {
-    padding: 14px;
-  }
-  .training__feature__card img {
-    padding: 10px;
-    margin-bottom: 12px;
-  }
-  .training__feature__card h1 {
-    margin-bottom: 12px;
-    font-size: 16px;
-  }
-  .training__support__images {
-    text-align: center;
-  }
-  .training__support__content {
-    max-width: 100%;
-  }
-  .resource__content p {
-    font-size: 18px;
-  }
-  .support-arrow-img {
-    display: none;
   }
 }
 
@@ -759,47 +770,5 @@
     height: 42px;
     border-radius: 4px;
     font-size: 14px;
-  }
-  .training__feature__bg .row {
-    margin: 0px auto;
-    max-width: 400px;
-  }
-  /* new */
-  .training__feature__card {
-    padding: 15px;
-  }
-  .training__feature__card img {
-    margin-bottom: 15px;
-  }
-  .training__feature__card h1 {
-    margin-bottom: 12px;
-    font-size: 16px;
-  }
-  .training__support__images {
-    text-align: center;
-  }
-  .training__support__content {
-    max-width: 100%;
-  }
-  .training__course__accordion__item {
-    align-items: flex-start;
-  }
-  .training__course__accordion__item img {
-    margin-top: 5px;
-  }
-  .training__course__profile {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .pagination li a {
-    height: 40px;
-    width: 40px;
-  }
-  .pagination li:first-child img,
-  .pagination li:last-child img {
-    margin-top: -3px;
-  }
-  .support-arrow-img {
-    display: none;
   }
 }

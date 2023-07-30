@@ -1,3 +1,133 @@
+.buyer_profile__types__bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.buyer_profile__types__bars > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.buyer_profile__types__bar.bar1 {
+  height: 11px;
+  display: block;
+  border-radius: 12px;
+  background: #c0dfdb;
+}
+.buyer_profile__types__bar.bar2 {
+  height: 11px;
+  display: block;
+  border-radius: 12px;
+  background: #ffe0b1;
+}
+.buyer_profile__types__content table {
+  width: 100%;
+  border-spacing: 10px;
+}
+
+.buyer_profile__types__content table thead {
+  position: relative;
+}
+
+.buyer_profile__types__content table thead:after {
+  content: "";
+  display: block;
+  background: var(--primary-400, #1ba494);
+  position: absolute;
+  left: calc((100% - 100vw) / 2);
+  width: 100vw;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.buyer_profile__types__content table thead :is(td, th) {
+  padding: 9px 0;
+  color: var(--white-500, #fff);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.buyer_profile__types__content
+  table
+  :is(thead, tbody)
+  :is(td, th):not(:first-child) {
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.buyer_profile__types__content table :is(thead, tbody) :is(td, th):first-child {
+  min-width: 370px;
+}
+
+.buyer_profile__types__content table tbody tr {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.buyer_profile__types__content table tbody :is(td, th) {
+  padding: 24px 0;
+  color: var(--black-400, #213937);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.buyer_profile__types__heading h1 {
+  color: var(--black-400, #213937);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 42px;
+}
+
+.buyer_profile__types__heading h2 {
+  color: var(--black-300, #536262);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.buyer_profile__contract__content table {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.buyer_profile__contract__content table thead :is(th, td) {
+  color: var(--black-200, #788080);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.buyer_profile__contract__content table tbody tr {
+  border-bottom: 1px solid #e4e4e4;
+  transition: 0.3s;
+}
+
+.buyer_profile__contract__content table tbody tr:hover {
+  border-color: var(--primary-500, #02897a);
+}
+
+.buyer_profile__contract__content table tbody :is(td, th) {
+  padding: 24px 0;
+  color: var(--black-400, #213937);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  vertical-align: top;
+  transition: 0.3s;
+}
+
+.buyer_profile__contract__content table tbody tr:hover :is(td, th) {
+  color: var(--primary-500, #02897a);
+}
+
 .buyer_profile__contract__area {
   padding: 60px 0;
 }

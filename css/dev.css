@@ -1,3 +1,80 @@
+.buyer_profile__login__content .common__btn {
+  color: var(--white-500, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  border: none;
+  width: 120px;
+  height: 40px;
+  margin: 0;
+}
+
+.buyer_profile__login__content .signup__btn {
+  color: var(--white-500, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  border: none;
+  margin: 0;
+}
+
+.buyer_profile__login__buttons {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.buyer_profile__login__content h2 {
+  color: var(--black-300, #536262);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.buyer_profile__login__content h1 {
+  color: var(--black-400, #213937);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 42px;
+  margin-bottom: 16px;
+}
+
+.buyer_profile__login__headings {
+  max-width: 615px;
+  margin: 0 auto;
+}
+
+.buyer_profile__login__content img {
+  position: absolute;
+  bottom: 0;
+}
+
+.buyer_profile__login__content .img1 {
+  left: 12px;
+}
+
+.buyer_profile__login__content .img2 {
+  right: 12px;
+}
+
+.buyer_profile__login__content {
+  border-radius: 12px;
+  background-color: #e8f5f1;
+  padding: 60px 0;
+  position: relative;
+}
+
+.buyer_profile__login__area {
+  padding: 60px 0;
+}
+
 .buyer_profile__types__bars {
   display: flex;
   flex-wrap: wrap;
@@ -23,6 +100,11 @@
   border-radius: 12px;
   background: #ffe0b1;
 }
+
+.buyer_profile__types__area {
+  margin-bottom: 60px;
+}
+
 .buyer_profile__types__content table {
   width: 100%;
   border-spacing: 10px;
@@ -52,10 +134,7 @@
   line-height: 22px;
 }
 
-.buyer_profile__types__content
-  table
-  :is(thead, tbody)
-  :is(td, th):not(:first-child) {
+.buyer_profile__types__content table :is(thead, tbody) :is(td, th):not(:first-child) {
   text-align: center;
   padding-left: 12px;
   padding-right: 12px;
@@ -83,6 +162,7 @@
   font-size: 32px;
   font-weight: 800;
   line-height: 42px;
+  margin-bottom: 16px;
 }
 
 .buyer_profile__types__heading h2 {
@@ -91,6 +171,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .buyer_profile__contract__content table {

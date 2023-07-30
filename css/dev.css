@@ -445,7 +445,6 @@
 
 .training__getstarted__area {
   background: linear-gradient(180deg, #25824c 0%, #0a9072 100%);
-  padding: 100px 0;
 }
 .training__getstarted__content {
   max-width: 400px;
@@ -486,12 +485,7 @@
   margin-left: auto;
   gap: 30px;
 }
-.training__getstarted__images img {
-  max-width: 300px;
-}
-.training__getstarted__images .image-1 {
-  align-self: end;
-}
+
 .training__course__content h1 {
   color: var(--black-500, #051412);
   font-size: 24px;
@@ -905,6 +899,9 @@
   .support-arrow-img {
     display: none;
   }
+  .training__getstarted__content h1 {
+    font-size: 38px;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -981,6 +978,10 @@
   }
   .support-arrow-img {
     display: none;
+  }
+  .training__getstarted__content {
+    padding: 70px 0;
+    max-width: 100%;
   }
 }
 

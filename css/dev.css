@@ -26,6 +26,8 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+  position: relative;
+  z-index: 2;
 }
 
 .buyer_profile__login__content h2 {
@@ -54,6 +56,7 @@
 .buyer_profile__login__content img {
   position: absolute;
   bottom: 0;
+  z-index: 1;
 }
 
 .buyer_profile__login__content .img1 {
@@ -79,7 +82,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 12px;
+  column-gap: 12px;
 }
 
 .buyer_profile__types__bars > div {
@@ -919,6 +922,14 @@
   background: #e8f5f1;
   z-index: -1;
 }
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+  .support-arrow-img {
+    bottom: -22px;
+  }
+  .buyer_profile__tender__content {
+    column-gap: 0px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .support-arrow-img {
     bottom: -22px;
@@ -982,6 +993,12 @@
   }
   .training__getstarted__content h1 {
     font-size: 38px;
+  }
+  .buyer_profile__login__content img {
+    max-width: 35%;
+  }
+  .buyer_profile__types__content table :is(thead, tbody) :is(td, th):first-child {
+    min-width: 250px;
   }
 }
 
@@ -1064,6 +1081,45 @@
     padding: 70px 0;
     max-width: 100%;
   }
+  .buyer_profile__types__area .container {
+    max-width: 100%;
+  }
+  .buyer_profile__types__content table :is(thead, tbody) :is(td, th):first-child {
+    min-width: 100%;
+  }
+  .buyer_profile__types__content table :is(thead, tbody) :is(td, th):not(:first-child) {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .buyer_profile__types__content table tbody tr td {
+    font-size: 14px;
+  }
+  .buyer_profile__types__bars div:last-child {
+    flex-direction: column;
+  }
+  .buyer_profile__contract__content table tbody :is(td, th) {
+    font-size: 14px;
+  }
+  .buyer_profile__tender__item {
+    max-width: 100%;
+  }
+  .buyer_profile__tender__area {
+    padding: 0;
+  }
+  .buyer_profile__types__area {
+    margin-bottom: 0px;
+  }
+  .buyer_profile__login__content img {
+    max-width: 35%;
+    min-width: 155px;
+  }
+  .buyer_profile__login__headings h1,
+  .buyer_profile__types__heading h1,
+  .buyer_profile__contract__heading h1,
+  .buyer_profile__tender__heading h1 {
+    font-size: 28px;
+  }
+  .buyer_profile__hero__area h1 {
+    font-size: 34px;
+  }
 }
-
-/* media */

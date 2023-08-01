@@ -137,7 +137,10 @@
   line-height: 22px;
 }
 
-.buyer_profile__types__content table :is(thead, tbody) :is(td, th):not(:first-child) {
+.buyer_profile__types__content
+  table
+  :is(thead, tbody)
+  :is(td, th):not(:first-child) {
   text-align: center;
   padding-left: 12px;
   padding-right: 12px;
@@ -997,7 +1000,10 @@
   .buyer_profile__login__content img {
     max-width: 35%;
   }
-  .buyer_profile__types__content table :is(thead, tbody) :is(td, th):first-child {
+  .buyer_profile__types__content
+    table
+    :is(thead, tbody)
+    :is(td, th):first-child {
     min-width: 250px;
   }
 }
@@ -1084,10 +1090,16 @@
   .buyer_profile__types__area .container {
     max-width: 100%;
   }
-  .buyer_profile__types__content table :is(thead, tbody) :is(td, th):first-child {
+  .buyer_profile__types__content
+    table
+    :is(thead, tbody)
+    :is(td, th):first-child {
     min-width: 100%;
   }
-  .buyer_profile__types__content table :is(thead, tbody) :is(td, th):not(:first-child) {
+  .buyer_profile__types__content
+    table
+    :is(thead, tbody)
+    :is(td, th):not(:first-child) {
     padding-left: 4px;
     padding-right: 4px;
   }

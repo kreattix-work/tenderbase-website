@@ -1800,6 +1800,49 @@
               </div>
             </div>
           </div>
+          <div class="card shadow-sm">
+            <div class="card-body px-4">
+              <div class="card no-shadow bg-secondary-extra-light">
+                <div class="card-body p-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="font-lg font-weight-lg">
+                      Types of Contract by Basildon Borough Council
+                    </div>
+                    <div
+                      data-collapse="#tender-details-7"
+                      data-collapse-status="open"
+                    >
+                      <button
+                        class="btn btn-square btn-sm btn-rounded border-color-secondary bg-white hide-on-close"
+                      >
+                        <span
+                          class="material-icons-outlined font-xxl text-secondary"
+                          >expand_less</span
+                        >
+                      </button>
+                      <button
+                        class="btn btn-square btn-sm btn-rounded btn-secondary hide-on-open"
+                      >
+                        <span class="material-icons-outlined font-xxl"
+                          >expand_more</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse show" id="tender-details-7">
+                <div class="text-secondary py-4 text-center">
+                  Contract Value in Last 1 Year
+                </div>
+                <div style="height: 300px">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <script src="http://3.231.159.167/v5/public/assets/v4/js/pages/dashboard.js?ver=5.9"></script>
@@ -1824,9 +1867,131 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="http://3.231.159.167/v5/public/assets/v4/js/bootstrap-tooltip.js?ver=5.9"></script>
     <script src="http://3.231.159.167/v5/public/assets/v4/js/cookie/load.js?ver=5.9"></script>
     <script src="http://3.231.159.167/v5/public/assets/v4/js/bootstrap.bundle.min.js?ver=5.9"></script>
     <script src="http://3.231.159.167/v5/public/assets/v4/js/scripts.js?ver=5.9"></script>
   </body>
 </html>
+
+<script>
+  // Sample data - replace this with your actual data
+  const months = [
+    "",
+    "",
+    "",
+    "JAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MAY",
+    "JUN",
+    "JUL",
+    "AUG",
+    "SEP",
+    "OCT",
+    "NOV",
+    "DEC",
+    "",
+    "",
+    "",
+  ];
+  const numbers = [
+    null,
+    null,
+    null,
+    3,
+    5,
+    8,
+    2,
+    6,
+    7,
+    10,
+    9,
+    1,
+    5,
+    3,
+    7,
+    null,
+    null,
+    null,
+  ];
+
+  // Get the canvas element
+  const ctx = document.getElementById("myChart").getContext("2d");
+
+  // Create the gradient color for the bars
+  const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+  gradient.addColorStop(0, "#ffcfa6"); // Orange
+  gradient.addColorStop(1, "#feead8");
+
+  // Create the chart
+  const myChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: months,
+      datasets: [
+        {
+          label: "Numbers",
+          data: numbers,
+          backgroundColor: gradient,
+          borderRadius: {
+            topLeft: 50,
+            topRight: 50,
+          },
+          barPercentage: 0.6,
+          categoryPercentage: 1,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false,
+        },
+        tooltip: {
+          mode: "index", // Show only one tooltip for the nearest data point
+          intersect: true, // Tooltip does not need to intersect the mouse cursor
+          backgroundColor: "rgb(255 207 166 / 40%)", // Tooltip background color
+          titleAlign: "center", // Center-align the tooltip title
+          titleColor: "#000", // Center-align the tooltip title
+          bodyAlign: "center", // Center-align the tooltip body
+          bodyColor: "#000", // Tooltip text color
+          displayColors: false, // Hide the color box in the tooltip
+          padding: 10,
+          caretSize: 0,
+          cornerRadius: 10,
+          callbacks: {
+            title: (context) => "", // Show the month as the title
+            label: (context) =>
+              `Mouse Hoover, Will Show Some Data In Text Here....`, // Show the value as the label
+          },
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          grid: {
+            drawTicks: false,
+            color: "rgba(255, 165, 0, 0.1)", // Orange color with light opacity
+          },
+          border: {
+            display: false,
+          },
+        },
+        x: {
+          border: {
+            display: false,
+          },
+          grid: {
+            drawTicks: false,
+            display: false,
+          },
+        },
+      },
+    },
+  });
+</script>

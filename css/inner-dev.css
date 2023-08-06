@@ -11,3 +11,31 @@
 .text-center {
   text-align: center !important;
 }
+
+/*
+===================================
+Please search and remove below listed css from styles.css
+if you want to add css then please add a new class to apply extra css
+otherwise it will break design in other pages
+===================================
+
+  .card-body .row-divider ~ .d-flex.align-items-center {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .data-card .row.gx-0 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .d-flex.align-items-center.box-gx-3 {
+    margin-bottom: 7px;
+  }
+  .card-body .d-flex.justify-content-between.align-items-center {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-body .d-flex.justify-content-between.align-items-center {
+    flex-direction: column;
+    gap: 7px;
+  }
+*/

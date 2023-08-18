@@ -1172,3 +1172,30 @@
 .hero__chart__card.active {
   width: 370px;
 }
+
+@media (max-width: 991px) {
+  .hero__chart__area {
+    flex-wrap: wrap;
+  }
+  .hero__chart__card {
+    order: 2;
+    flex: 1;
+  }
+  .hero__chart__card.active {
+    order: 1;
+    flex: initial;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .hero__chart__area {
+    padding: 0px 40px;
+  }
+  .hero__chart__card {
+    width: 100%;
+    flex: initial;
+  }
+  .hero__chart__card.active {
+    width: 100%;
+  }
+}

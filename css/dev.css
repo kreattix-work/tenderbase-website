@@ -335,11 +335,16 @@
 }
 
 .buyer_profile__tender__content h3 {
-  color: var(--primary-500, #02897a);
+  color: var(--black-black-400, #213937);
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
   margin: 0;
+  transition: all 0.3s;
+}
+
+.buyer_profile__tender__content .buyer_profile__tender__item:hover h3 {
+  color: var(--primary-500, #02897a);
 }
 .buyer_profile__tender__content h4 {
   color: var(--black-200, #788080);
@@ -1134,4 +1139,36 @@
   .buyer_profile__hero__area h1 {
     font-size: 34px;
   }
+}
+
+.hero__chart__area {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.hero__chart__area img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.hero__chart__card {
+  width: 177px;
+  height: 230px;
+  border-radius: 8px;
+  background: #fff;
+  filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.06));
+}
+.hero__chart__card.active {
+  width: 370px;
 }
